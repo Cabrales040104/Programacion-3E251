@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
       resetPosition = pantalla. ResetPosition();
       pantalla.Print();
       fotograma ++;
-      std::this_thread::sleep_for(.24s);
+      std::this_thread::sleep_for(.025s);
       }
     
   
