@@ -19,5 +19,10 @@ clean :
 
 $(MEM):$(SRC)/memoria.cpp
 	c++ $< -o $@
-runm : $(MEM)
+runm: $(MEM)
 	./$<
+archivo: bin/archivo
+	./$<
+
+bin/archivo: src/archivo.cpp
+	c++ $< -o $@ -I$(INCLUDE)
